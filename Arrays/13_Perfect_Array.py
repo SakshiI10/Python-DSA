@@ -20,3 +20,5 @@ if solution.isPerfect(n, arr):
     print("PERFECT")
 else:
     print("NOT PERFECT")
+
+
