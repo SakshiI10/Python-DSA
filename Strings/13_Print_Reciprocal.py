@@ -5,12 +5,7 @@ Similarly, if the letter is a small case then the first letter will be 'a' and t
 
 S = "ab C"
 Output:
-zy X
-Explanation:
-The reciprocal of the first letter 'a' is 'z'.
-The reciprocal of the second letter 'b' is 'y'.
-The reciprocal of the third letter ' ' is ' '.
-The reciprocal of the last letter 'C' is 'X'.'''
+zy X'''
 
 class Solution:
     def reciprocalString(self, S):
