@@ -3,16 +3,12 @@ Given an array of N distinct elements, the task is to find all elements in array
 
 Input : 
 a[] = {2, 8, 7, 1, 5}
-Output :
-1 2 5 
-Explanation :
-The output three elements have two or
-more greater elements.   '''
+Output : 1 2 5'''
 
 class Solution:
-    def findElements(self, a, n):
-        arr_sorted = sorted(a)  
-        result = arr_sorted[:-2]
+    def findElements(self, arr, n):
+        arr.sort()
+        result = arr[:-2]
         return result
 
 sol = Solution()

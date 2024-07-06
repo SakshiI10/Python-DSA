@@ -12,7 +12,6 @@ class Solution:
     def isPerfect(self, n: int, arr: List[int]) -> bool:
         return arr == arr[::-1]
 
-# Example usage:
 n = 5
 arr = [1, 2, 3, 2, 1]
 solution = Solution()
@@ -20,5 +19,3 @@ if solution.isPerfect(n, arr):
     print("PERFECT")
 else:
     print("NOT PERFECT")
-
-    
