@@ -4,16 +4,20 @@ Given a array of length N, at each step it is reduced by 1 element. In the first
 Input:
 N = 7
 A[] = {7, 8, 3, 4, 2, 9, 5}
-Ouput:
-5'''
+Ouput: 5'''
 
 class Solution:
     def leftElement(self, arr, n):
         arr.sort()
-        left_element = (n - 1) // 2
-        return arr[left_element]
 
-# Example usage
+        for i in range(n):
+            print(arr[i], end=" ")
+
+        left_element = arr[(n - 1) // 2]
+        result = [left_element]
+
+        return result
+
 solution = Solution()
 N1 = 7
 A1 = [7, 8, 3, 4, 2, 9, 5]

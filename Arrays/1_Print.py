@@ -7,7 +7,7 @@ arr[] = {1, 2, 3, 4, 5}
 Output: 1 2 3 4 5'''
 
 class Solution:
-	def printArray(self,arr, n):
+	def printArray(self, arr, n):
 	   for i in range(n):
             print(arr[i], end=" ")
 

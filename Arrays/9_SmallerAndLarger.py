@@ -4,15 +4,13 @@ Given a sorted array Arr of size N and a value X, find the number of array eleme
 Input:
 N = 7, X = 0
 Arr[] = {1, 2, 8, 10, 11, 12, 19}
-Output: 0 7
-Explanation: There are no elements less or
-equal to 0 and 7 elements greater or equal
-to 0.'''
+Output: 0 7'''
 
 class Solution:
     def getMoreAndLess(self, arr, n, x):
         less = 0
         more = 0
+
         for num in arr:
             if num <= x:
                 less += 1
