@@ -1,5 +1,4 @@
-'''
-Convert character to String'''
+'''Convert character to String'''
 
 class Solution:
     def chartostr(self, arr, n):

@@ -1,6 +1,5 @@
 '''
 Given a string S, write a program to count the occurrence of Lowercase characters, Uppercase characters, Special characters and Numeric values in the string.
-Note: There are no white spaces in the string.
 
 Input:
 S = "#GeeKs01fOr@gEEks07"
@@ -8,7 +7,7 @@ Output:
 5
 8
 4
-2'''
+2 '''
 
 class Solution:
     def countCharacters(self, S):
