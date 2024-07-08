@@ -4,14 +4,16 @@ Note: If the length of the array is odd then the right half will contain one ele
 
 Input : arr[ ] = {1, 2, 3, 4}
 Output : 21'''
+ 
+class Solution:
+    def multiply (arr, n) : 
+        divide = n//2
+        sum1 = sum(arr[:divide])
+        sum2 = sum(arr[divide:])
+        result=sum1*sum2
+        return result
 
-def multiply (arr, n) : 
-    divide = n//2
-    sum1 = sum(arr[:divide])
-    sum2 = sum(arr[divide:])
-    result=sum1*sum2
-    return result
-
+sol=Solution()
 arr = [1, 2, 3, 4]
 n = len(arr)
-print(multiply(arr, n))  # Output: 21
+print(sol.multiply(arr, n))  # Output: 21

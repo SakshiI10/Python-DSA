@@ -4,20 +4,22 @@ Mr. Geek is a greedy seller. He has a stock of N laptops which comprises of both
 Input:N=4, M=3, A[] = {-6, 0, 35, 4}
 Output: 6'''
 
-def maxProfit(a, n, m):
-    a.sort()
-    sum = 0
-    
-    for i in range(n):
-        if a[i] < 0 and m > 0:
-            sum += a[i]
-            m -= 1
-        elif m == 0:
-            break
-    
-    return -sum
+class Solution:
+    def maxProfit(self, a, n, m):
+        a.sort()
+        sum = 0
+        
+        for i in range(n):
+            if a[i] < 0 and m > 0:
+                sum += a[i]
+                m -= 1
+            elif m == 0:
+                break
+        
+        return -sum
 
+sol=Solution()
 N = 4
 M = 3
 A = [-6, 0, 35, 4]
-print(maxProfit(A, N, M))  # Output: 6
+print(sol.maxProfit(A, N, M))  # Output: 6
