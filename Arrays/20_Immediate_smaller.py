@@ -16,7 +16,7 @@ class Solution:
         arr[n - 1] = -1  
         return arr
 
+sol = Solution()
 n = 5
 arr = [4, 2, 1, 5, 3]
-solution = Solution()
-print(solution.immediateSmaller(arr, n)) 
+print(sol.immediateSmaller(arr, n)) 

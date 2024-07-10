@@ -1,8 +1,7 @@
 '''
 Given a number N, count the numbers from 1 to N which comprise of digits only from set {1, 2, 3, 4, 5}.
 
-Input:
-N = 20
+Input: N = 20
 Output: 10'''
 # Need improvements
 
@@ -18,5 +17,5 @@ class Solution:
         return count
 
 N = 20
-solution = Solution()
-print(solution.countNumbers(N))  # Output: 10
+sol = Solution()
+print(sol.countNumbers(N))  # Output: 10
