@@ -19,3 +19,4 @@ brr = [1, 2, 6, -1, 0, 9]
 m = len(brr)
 print(sol.find_multiplication(arr, brr, n, m))
 
+
