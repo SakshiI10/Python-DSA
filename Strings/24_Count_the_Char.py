@@ -16,7 +16,13 @@ class Solution:
                 else:
                     count_dict[char] = 1
                 prev_char = char
-                
+
+        '''
+        result_count = 0
+        for char, count in count_dict.items():
+            if count == N:
+                result_count += 1
+        '''    
         result_count = sum(1 for count in count_dict.values() if count == N)
         
         return result_count
