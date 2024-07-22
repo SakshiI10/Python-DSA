@@ -24,8 +24,8 @@ class Solution:
 
         return min(time_with_A, time_with_B)
 
-solution = Solution()
+sol = Solution()
 a = [2, 1, 2]
 b = [3, 2, 1]
 n = 3
-print(solution.minTime(a, b, n))  # Output: 5
+print(sol.minTime(a, b, n))  # Output: 5
