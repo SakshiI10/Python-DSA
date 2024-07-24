@@ -17,7 +17,7 @@ class Solution:
                 return i
         return -1
 
-solution = Solution()
-print(solution.search([1, 2, 3, 4], 3))  # Output: 2
-print(solution.search([10, 8, 30, 4, 5], 5))  # Output: 4
-print(solution.search([10, 8, 30], 6))  # Output: -1
+sol = Solution()
+print(sol.search([1, 2, 3, 4], 3))  # Output: 2
+print(sol.search([10, 8, 30, 4, 5], 5))  # Output: 4
+print(sol.search([10, 8, 30], 6))  # Output: -1
