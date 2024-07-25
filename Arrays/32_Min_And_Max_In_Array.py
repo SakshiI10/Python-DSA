@@ -18,7 +18,7 @@ class Solution:
             max_val = max(arr)
             min_val = min(arr)
         
-        return [min_val, max_val]
+        return min_val, max_val
 
 sol = Solution()
 arr = [3, 2, 1, 56, 10000, 167]
