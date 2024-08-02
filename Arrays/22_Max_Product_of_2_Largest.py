@@ -1,6 +1,6 @@
 '''
 Given an array Arr of size N with all elements greater than or equal to zero. Return the maximum product of two numbers possible.
-
+ 
 Input: 
 N = 6
 Arr[] = {1, 4, 3, 6, 7, 0}  
