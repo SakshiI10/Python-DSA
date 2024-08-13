@@ -13,7 +13,7 @@ def right_rotate(arr, d):
     d = d % n  
     return arr[-d:] + arr[:-d]
 
-arr = [1, 2, 3, 4, 5]
+arr = [9, 8, 7, 6, 4, 2, 1, 3]
 d = 1
 
 left_rotated_arr = left_rotate(arr, d)
