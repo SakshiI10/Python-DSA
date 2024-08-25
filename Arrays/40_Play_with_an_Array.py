@@ -6,19 +6,19 @@ Output: true'''
 
 class Solution:
     def formatArray(self, arr):
-        arr.sort()  # Sort the array
+        arr.sort()  
         n = len(arr)
         
         for i in range(1, n, 2):
             if arr[i] <= arr[i - 1]:
                 arr[i], arr[i - 1] = arr[i - 1], arr[i]
-        
+                
         for i in range(1, n, 2):
             if arr[i] <= arr[i - 1]:
                 return 'false'
         return 'true'
 
-solution = Solution()
+sol = Solution()
 
-arr1 = [5, 4, 3, 2, 1]
-print(solution.formatArray(arr1))  
+arr = [5, 4, 3, 2, 1]
+print(sol.formatArray(arr))  

@@ -21,5 +21,3 @@ class Solution:
 sol = Solution()
 print(sol.convertFive(1004))  # Output: 1554
 print(sol.convertFive(121))   # Output: 121
-print(sol.convertFive(123))   # Output: 123
-print(sol.convertFive(5))     # Output: 5

@@ -6,7 +6,7 @@ Input : arr[ ] = {1, 2, 3, 4}
 Output : 21'''
  
 class Solution:
-    def multiply (arr, n) : 
+    def multiply (self, arr, n) : 
         divide = n//2
         sum1 = sum(arr[:divide])
         sum2 = sum(arr[divide:])

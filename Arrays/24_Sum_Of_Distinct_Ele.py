@@ -22,5 +22,5 @@ class Solution:
 sol = Solution()
 N = 5
 Arr = [5, 5, 5, 5, 5]
-print(sol.findSum(Arr, N))  # Output: 15
+print(sol.findSum(Arr, N))  # Output: 5
 

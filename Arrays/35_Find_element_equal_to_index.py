@@ -6,7 +6,6 @@ Output: 30'''
 
 from typing import List
 
-
 class Solution:
-    def findElementAtIndex(self, key : int, arr : List[int]) -> int:
+    def findElementAtIndex(self, key, arr):
         return arr[key]

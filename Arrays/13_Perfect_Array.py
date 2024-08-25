@@ -9,7 +9,7 @@ Output : PERFECT'''
 from typing import List
 
 class Solution:
-    def isPerfect(self, n: int, arr: List[int]) -> bool:
+    def isPerfect(self, n, arr):
         return arr == arr[::-1]
 
 n = 5

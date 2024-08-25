@@ -19,11 +19,8 @@ class Solution:
         
         return max_height
 
-
-sol = Solution()
-    
+sol = Solution()    
 arr1 = [1, 2, 2, 1]
 arr2 = [3, 2, 2, 3, 1, 2]
-    
 print(sol.findMax(arr1))  # Expected Output: 25
 print(sol.findMax(arr2))  # Expected Output: 38
