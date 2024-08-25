@@ -14,8 +14,7 @@ class Solution:
                 count += 1
         
         return count
-    
-# Example usage:
+
 sol = Solution()
 S1 = "ckjkUUYII"
 S2 = "CamelCaseExample"

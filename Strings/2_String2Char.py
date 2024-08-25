@@ -7,4 +7,4 @@ class Solution:
 sol = Solution()
 str = "qwerty"
 result = sol.strtochar(str)
-print(' '.join(result))
+print(', '.join(result))

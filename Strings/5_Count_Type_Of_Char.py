@@ -11,8 +11,8 @@ Output:
 
 class Solution:
     def countCharacters(self, S):
-        lower_count = 0
         upper_count = 0
+        lower_count = 0
         special_count = 0
         digit_count = 0
         
@@ -32,7 +32,7 @@ sol = Solution()
 S = "#GeeKs01fOr@gEEks07"
 lower, upper, special, digits = sol.countCharacters(S)
 
-print(lower)   # Output: 5
 print(upper)   # Output: 8
+print(lower)   # Output: 5
 print(special) # Output: 4
 print(digits)  # Output: 2

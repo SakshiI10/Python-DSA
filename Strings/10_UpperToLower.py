@@ -6,7 +6,7 @@ s = "ABCddE"
 Output: "abcdde"'''
 
 class Solution:
-    def toLower (self , s : str)-> str :
+    def toLower (self , s):
         return s.lower()
     
 sol=Solution()

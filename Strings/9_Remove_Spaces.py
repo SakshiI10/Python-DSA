@@ -8,11 +8,13 @@ Explanation: All the spaces have been
 removed.'''
 
 class Solution:
-    def modify(self, s: str) -> str:
+    def modify(self, s):
         result = ""
+
         for char in s:
             if char != ' ':
                 result += char
+                
         return result
 
 sol = Solution()
