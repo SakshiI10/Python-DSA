@@ -14,7 +14,7 @@ class Solution:
         for ch in s:
             if ch.isdigit():
                 current_int += ch
-            elif current_int:
+            elif current_int:   #current_int has accumulated digits, it means we've reached the end of an integer in the string.
                 result.append(current_int)
                 current_int = ''
         

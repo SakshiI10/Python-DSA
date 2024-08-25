@@ -1,5 +1,5 @@
 '''
-Given a string S. Count the characters that have ‘N’ number of occurrences. If a character appears consecutively it is counted as 1 occurrence.
+Given a string S. Count the characters that have N number of occurrences. If a character appears consecutively it is counted as 1 occurrence.
 
 Input: S = "abc", N = 1
 Output: 3'''
@@ -17,14 +17,11 @@ class Solution:
                     count_dict[char] = 1
                 prev_char = char
 
-        '''
         result_count = 0
         for char, count in count_dict.items():
             if count == N:
                 result_count += 1
-        '''    
-        result_count = sum(1 for count in count_dict.values() if count == N)
-        
+                
         return result_count
 
 solution = Solution()

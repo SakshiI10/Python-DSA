@@ -6,7 +6,7 @@ s = "geeks"
 Output: False'''
 
 class Solution:
-    def check(self, s: str) -> bool:
+    def check(self, s):
         n = len(s)
         
         if n == 0 or n == 1:
