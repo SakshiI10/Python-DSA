@@ -10,7 +10,6 @@ class Solution:
         return len(unique_persons)
 
 solution = Solution()
-arr1 = [1, 1, 1, 1, 1]
 print("Minimum apples required for arr1:", solution.minimumApple(arr1))  # Output: 1
 
 arr2 = [1, 2, 3, 1, 2]
