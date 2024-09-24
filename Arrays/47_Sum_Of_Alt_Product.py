@@ -3,13 +3,15 @@ Given an array arr of even size consisting of positive integers. After sorting t
 
 Input: arr[] = [9, 2, 8, 4, 5, 7, 6, 0]
 Output: 74'''
+# [0, 2, 4, 5, 6, 7, 8, 9]
 
 class Solution:
     def altProduct(self, arr):
         arr.sort()
         sum_alt = 0
         n = len(arr)
-        
+        print(arr)
+
         for i in range(n // 2):
             product = arr[i] * arr[n - i - 1]
             sum_alt += product
