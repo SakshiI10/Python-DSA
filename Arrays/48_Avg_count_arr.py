@@ -23,3 +23,17 @@ sol = Solution()
 arr = [2, 4, 8, 6, 2]
 x = 2
 print(sol.countArray(arr, x)) 
+
+
+'''
+class Solution:
+    def countArray (self, arr, x) : 
+        count_map = {}
+        for num in arr:
+            count_map[num] = count_map.get(num, 0) + 1
+        
+        for i in range(n):
+            avg = (arr[i] + x) // 2
+            result.append(count_map.get(avg, 0))  
+            
+        return result'''
