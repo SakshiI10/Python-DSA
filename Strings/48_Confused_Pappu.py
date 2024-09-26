@@ -21,3 +21,4 @@ sol = Solution()
 amount = 56
 output = sol.findDiff(amount)
 print(output)  # Output: 3
+   
