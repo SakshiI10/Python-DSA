@@ -31,7 +31,6 @@ def insert_at_end(head, val):
         new_node.prev=temp
         return head
     
-
 def printDLL(head):
     if head is None:
         print("Empty Linked List")
