@@ -29,7 +29,7 @@ def delete_first(head):
         head = head.next  # Move the head to the next node
         head.prev = None  # Remove the backward link
         del temp  # Free the old head
-        return head  # Return the updated head
+        return head  # Return the updated head   
 
 def delete_end(head):
     if head is None or head.next is None:
