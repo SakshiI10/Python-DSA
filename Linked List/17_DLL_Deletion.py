@@ -9,7 +9,7 @@ head = Node(10)
 second = Node(20)
 third = Node(30)
 fourth = Node(40)
-
+      
 # Linking the nodes
 head.next = second
 second.prev = head
