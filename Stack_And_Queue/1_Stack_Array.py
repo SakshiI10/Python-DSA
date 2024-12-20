@@ -51,3 +51,5 @@ if __name__ == "__main__":
     stack.pop()                         # Attempt to pop from an empty stack
 
     print("Is stack empty?", stack.is_empty())  
+
+# Limitation of Array based Implementation: The maximum size of the stack must first be defined and it cannot be changed.
