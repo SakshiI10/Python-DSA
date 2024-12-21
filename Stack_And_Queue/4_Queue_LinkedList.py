@@ -48,4 +48,4 @@ if __name__ == "__main__":
 
     # Dequeue elements from the queue
     q.dequeue()
-    q.dequeue()
+    q.dequeue() 
