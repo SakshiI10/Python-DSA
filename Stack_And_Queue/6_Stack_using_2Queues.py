@@ -6,6 +6,7 @@ class StackUsingQueues:
         self.Q2 = Queue()  # Second queue
 
     def push(self, data):
+        # Push element in empty stack
         if len(self.Q1.queue) != 0:  # Check if Q1 is not empty
             self.Q1.put(data)
         else:
@@ -26,7 +27,7 @@ class StackUsingQueues:
         while len(self.Q2.queue) > 1:
             self.Q1.put(self.Q2.get())
         return self.Q2.get()
-
+  
 if __name__ == "__main__":
     stack = StackUsingQueues()
 
