@@ -17,3 +17,5 @@ if __name__ == "__main__":
     arr = [3, 5, 1, 9, 2, 8]
     result = find_sum(arr, 0, len(arr) - 1)
     print("Sum of elements:", result)
+
+# Time Complexity: O(n)
