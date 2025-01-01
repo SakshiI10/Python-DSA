@@ -17,3 +17,5 @@ if __name__ == "__main__":
     arr = [3, 5, 1, 9, 2, 8]
     result = find_max(arr, 0, len(arr) - 1)
     print("Maximum element:", result)
+
+# Time Complexity: O(n)
