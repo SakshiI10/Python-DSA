@@ -38,3 +38,12 @@ arr = [12, 11, 13, 5, 6, 7]
 print("Original Array: ",arr)
 merge_sort(arr)
 print("Sorted array:", arr)
+
+# Overall Time Complexity: The overall time complexity for merge sort is the sum of dividing, sorting, and merging.
+
+# Divide: 𝑂(log⁡2(𝑛))
+# Sort: 𝑂(𝑛⋅log⁡2(𝑛))
+# Merge: 𝑂(𝑛⋅log⁡2(𝑛))
+
+# Thus, the overall time complexity of merge sort is: 𝑇(𝑛)=𝑂(𝑛⋅log⁡2(𝑛))
+          
