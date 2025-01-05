@@ -1,7 +1,7 @@
 def partition(array, low, high):
     # Choose the leftmost element as the pivot
     pivot = array[low]
-    i = low + 1 
+    i = low + 1   
     j = high
 
     while i <= j:
