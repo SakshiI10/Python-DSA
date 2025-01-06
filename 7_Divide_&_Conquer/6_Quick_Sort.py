@@ -3,7 +3,7 @@ def partition(array, low, high):
     pivot = array[low]
     i = low + 1   
     j = high
-
+   
     while i <= j:
         # Find the first element greater than pivot
         while i <= j and array[i] <= pivot:
