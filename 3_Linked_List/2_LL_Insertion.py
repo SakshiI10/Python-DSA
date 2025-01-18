@@ -1,5 +1,5 @@
 # Insertion in Linked List:
-
+  
 class Node:
     def __init__(self, data):
         # Initialize a node with the given data and set the next pointer to None
