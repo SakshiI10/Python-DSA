@@ -1,13 +1,13 @@
 class Node:
     def __init__(self, data):
         # Initialize a node with the given data and set the next pointer to None
-        self.data = data        #attributes of the Node class
-        self.next = None        #attributes of the Node class
+        self.data = data        #attribute of the Node class
+        self.next = None        #attribute of the Node class
 
 class LinkedList:
     def __init__(self):
         # Initialize the linked list with an empty head
-        self.head = None        #pointer
+        self.head = None        #attribute of the LinkedList class and reference to first node in the linked list
 
 def Rec_count(head):
     if head is None:
