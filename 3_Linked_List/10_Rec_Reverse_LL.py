@@ -9,13 +9,10 @@ def reverse_list(head):
 
     # Reverse the rest of the list
     new_Head = reverse_list(head.next)
-    
     # Make the current head the last node
     head.next.next = head
-    
     # Update the next of current head to None
     head.next = None
-    
     # Return the new head of the reversed list
     return new_Head
 
@@ -37,4 +34,4 @@ if __name__ == "__main__":
     print_list(head)
 
 # After executing this line: new_Head = reverse_list(head.next), the head will come at last node and it will return to second last.
-#After returning to second last this line will work: head.next.next = head.
+# After returning to second last this line will work: head.next.next = head.

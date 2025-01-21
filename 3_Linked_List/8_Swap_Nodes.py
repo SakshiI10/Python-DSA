@@ -34,6 +34,5 @@ ll.head.next = Node(2)
 ll.head.next.next = Node(3)
 ll.head.next.next.next = Node(4)
 ll.head.next.next.next.next = Node(5)
-
 ll.head = Swap_pairs(ll.head)
 Rec_print(ll.head)

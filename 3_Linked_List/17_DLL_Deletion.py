@@ -19,17 +19,17 @@ third.next = fourth
 fourth.prev = third
 
 def delete_first(head):
-    if head is None:  # If the list is empty
+    if head is None:        # If the list is empty
         print("Nothing to delete")
         return None
-    if head.next is None:  # If there is only one node
+    if head.next is None:   # If there is only one node
         return None
-    else:  # More than one node
-        temp = head  # Store the current head
-        head = head.next  # Move the head to the next node
-        head.prev = None  # Remove the backward link
-        del temp  # Free the old head
-        return head  # Return the updated head   
+    else:                   # More than one node
+        temp = head         # Store the current head
+        head = head.next    # Move the head to the next node
+        head.prev = None    # Remove the backward link
+        del temp            # Free the old head
+        return head         # Return the updated head   
 
 def delete_end(head):
     if head is None or head.next is None:
@@ -51,7 +51,7 @@ def printDLL(head):
     while temp:
         print(temp.data, end=" <=> ")
         temp = temp.next
-    print("None")  # Indicates the end of the list
+    print("None")           # Indicates the end of the list
 
 head = delete_first(head)
 printDLL(head)

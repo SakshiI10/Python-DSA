@@ -12,7 +12,7 @@ def reverse_list(head):
     if head is None or head.next is None:
         return head
     
-    # Initialize three pointers: curr, prev and next
+    # Initialize three reference: curr, prev and next
     prev = None
     curr = head
     next=head.next
@@ -21,7 +21,6 @@ def reverse_list(head):
         curr.next=prev
         prev = curr
         curr = next
-
         if next:
             next=next.next
 
