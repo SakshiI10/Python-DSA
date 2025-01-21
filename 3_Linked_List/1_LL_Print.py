@@ -14,7 +14,7 @@ second.next = third
 
 # Function to print the linked list
 def printLinkedList(head):
-    current = head
+    current = head  # Here, current is a reference
     while current:
         print(current.data, end=" -> ")
         current = current.next

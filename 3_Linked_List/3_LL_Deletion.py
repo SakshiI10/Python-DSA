@@ -91,6 +91,7 @@ ll.head = Node(1)
 ll.head.next = Node(2)
 ll.head.next.next = Node(3)
 ll.head.next.next.next = Node(4)
+ll.head.next.next.next.next = Node(5)
 
 print("Original list:")
 ll.display()  # Output: 1 -> 2 -> 3 -> None
@@ -104,9 +105,9 @@ ll.remove_last_node()
 ll.display()  # Output:2 -> None
 
 # Remove node at index 0
-ll.remove_at_index(0)
+ll.remove_at_index(1)
 ll.display() 
 
 # Remove a node with certain data
-ll.remove_node(3)
+ll.remove_node(2)
 ll.display()  # Output: 1 -> 2 -> 4 -> None
