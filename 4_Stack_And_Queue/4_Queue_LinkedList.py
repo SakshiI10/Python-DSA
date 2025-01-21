@@ -1,3 +1,5 @@
+# Linked List implementation of Queue
+
 class Node:
     def __init__(self, new_data):
         self.data = new_data
@@ -40,12 +42,8 @@ class Queue:
 
 if __name__ == "__main__":
     q = Queue()
-
-    # Enqueue elements into the queue
-    q.enqueue(10)
+    q.enqueue(10)   # Enqueue elements into the queue
     q.enqueue(20)
     q.enqueue(30)
-
-    # Dequeue elements from the queue
-    q.dequeue()
+    q.dequeue()     # Dequeue elements from the queue
     q.dequeue() 

@@ -35,11 +35,9 @@ class Stack:
             return None
         return self.array[self.top]
 
-
 # Example usage
 if __name__ == "__main__":
     stack = Stack(3)                    # Create a stack with a capacity of 5
-
     stack.push(10)
     stack.push(20)
     stack.push(30)
@@ -49,7 +47,6 @@ if __name__ == "__main__":
     stack.pop()
     stack.pop()
     stack.pop()                         # Attempt to pop from an empty stack
-
     print("Is stack empty?", stack.is_empty())  
 
 # Limitation of Array based Implementation: The maximum size of the stack must first be defined and it cannot be changed.

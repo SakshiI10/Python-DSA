@@ -1,4 +1,4 @@
-#Array Implementation of Queue
+# Array Implementation of Queue
 
 class CircularQueue:
     def __init__(self, size):
@@ -56,14 +56,10 @@ class CircularQueue:
 if __name__ == "__main__":
     queue = CircularQueue(15)
     queue.display()
-
     queue.EnQueue(10)
     queue.EnQueue(20)
     queue.EnQueue(30)
-
     queue.display()
-
     queue.DeQueue()
     queue.DeQueue()
-
     queue.display()
