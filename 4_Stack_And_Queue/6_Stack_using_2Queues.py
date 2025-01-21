@@ -1,3 +1,5 @@
+# Stack using two queues
+
 from queue import Queue
 
 class StackUsingQueues:
@@ -30,13 +32,9 @@ class StackUsingQueues:
   
 if __name__ == "__main__":
     stack = StackUsingQueues()
-
-    # Push elements onto the stack
     stack.push(1)
     stack.push(2)
     stack.push(3)
-
-    # Pop elements from the stack
     print(stack.pop())  # Output: 3
     print(stack.pop())  # Output: 2
     stack.push(4)

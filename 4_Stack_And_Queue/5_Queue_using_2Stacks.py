@@ -1,3 +1,5 @@
+# Queue using two stacks
+
 class QueueUsingStacks:
     def __init__(self):
         self.S1 = []  # Stack 1
@@ -27,12 +29,9 @@ if __name__ == "__main__":
     Q.EnQueue(1)
     Q.EnQueue(2)
     Q.EnQueue(3)
-
     print(Q.DeQueue())  # Output: 1
     print(Q.DeQueue())  # Output: 2
     Q.EnQueue(4)
-
     print(Q.DeQueue())  # Output: 3
     print(Q.DeQueue())  # Output: 4
-
-    Q.DeQueue()  # Output: 4
+    Q.DeQueue()         # Output: 4
