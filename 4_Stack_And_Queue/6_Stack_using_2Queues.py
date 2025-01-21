@@ -28,7 +28,7 @@ class StackUsingQueues:
         # If Q2 is not empty, transfer elements to Q1
         while len(self.Q2.queue) > 1:
             self.Q1.put(self.Q2.get())
-        return self.Q2.get()
+        return self.Q2.get() 
   
 if __name__ == "__main__":
     stack = StackUsingQueues()
