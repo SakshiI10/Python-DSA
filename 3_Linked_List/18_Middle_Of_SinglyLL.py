@@ -59,8 +59,6 @@ ll.append(2)
 ll.append(3)
 ll.append(4)
 ll.append(5)
-
 print("Linked List:")
 ll.print_list()
-
 ll.print_middle()
