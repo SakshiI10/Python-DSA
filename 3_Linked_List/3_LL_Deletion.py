@@ -12,20 +12,20 @@ class LinkedList:
         self.head = None
 
     def remove_first_node(self):
+        # If the list is empty, there is nothing to remove
         if self.head is None:
-            # If the list is empty, there is nothing to remove
             return
         
         # Move the head pointer to the next node
         self.head = self.head.next
 
     def remove_last_node(self):
+        # If the list is empty, there is nothing to remove
         if self.head is None:
-            # If the list is empty, there is nothing to remove
             return
         
+        # If there's only one node, remove it by setting head to None
         if self.head.next is None:
-            # If there's only one node, remove it by setting head to None
             self.head = None
             return
 
@@ -94,20 +94,18 @@ ll.head.next.next.next = Node(4)
 ll.head.next.next.next.next = Node(5)
 
 print("Original list:")
-ll.display()  # Output: 1 -> 2 -> 3 -> None
-
-# Remove the first node
+ll.display()  
 ll.remove_first_node()
-ll.display()  # Output: 2 -> 3 -> None
-
-# Remove the last node again
+ll.display()  
 ll.remove_last_node()
-ll.display()  # Output:2 -> None
-
-# Remove node at index 0
+ll.display()  
 ll.remove_at_index(1)
 ll.display() 
-
-# Remove a node with certain data
 ll.remove_node(2)
-ll.display()  # Output: 1 -> 2 -> 4 -> None
+ll.display() 
+
+'''
+Time Complexities:
+1. Deletion at the Beginning: O(1)
+2. Deletion at the Middle: O(n)
+3. Deletion at the End: O(n)'''

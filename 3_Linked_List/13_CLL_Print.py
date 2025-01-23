@@ -27,7 +27,5 @@ fourth = Node(4)
 head.next = second
 second.next = third
 third.next = fourth
-fourth.next = head  # Link the last node back to the head to make it circular
-
-# Print the circular linked list
+fourth.next = head
 printList(head)
