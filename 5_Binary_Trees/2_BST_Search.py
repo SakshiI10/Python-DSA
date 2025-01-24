@@ -1,3 +1,7 @@
+# Binary Search Tree(BST): A BST is a Binary Tree in which every node satisfies the property.
+# a) All the keys in the left subtree of node(x) are smaller than x.sum
+# b) All the keys in the right subtree of node(x) are greater than x.
+
 class Node:
     def __init__(self, key):
         self.key = key
@@ -5,7 +9,6 @@ class Node:
         self.right = None
 
 def search(root, key):
-  
     # Base Cases: root is null or key is present at root
     if root is None or root.key == key:
         return root
