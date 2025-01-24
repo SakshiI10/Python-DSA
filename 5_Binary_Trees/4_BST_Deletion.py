@@ -54,7 +54,6 @@ def deleteNode(root, key):
 
     return root
 
-# Testing the deletion
 r = Node(50)
 r = insert(r, 30)
 r = insert(r, 20)
@@ -62,12 +61,9 @@ r = insert(r, 40)
 r = insert(r, 70)
 r = insert(r, 60)
 r = insert(r, 80)
-
 print("Inorder traversal before deletion:")
 inorder(r)
 print()
-
 r = deleteNode(r, 50)
-
 print("Inorder traversal after deleting 50:")
 inorder(r)
