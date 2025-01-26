@@ -42,7 +42,6 @@ def length2(head):
             break
     return count
 
-# Directly initialize the nodes
 head = Node(1)  # First node (head)
 second = Node(2)
 third = Node(3)
