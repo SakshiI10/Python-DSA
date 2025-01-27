@@ -1,8 +1,8 @@
 # Linked List implementation of Queue
 
 class Node:
-    def __init__(self, new_data):
-        self.data = new_data
+    def __init__(self, data):
+        self.data = data
         self.next = None
 
 class Queue:
@@ -10,19 +10,19 @@ class Queue:
         self.front = None
         self.rear = None
 
-    def enqueue(self, new_data):
-        new_node = Node(new_data)
+    def enqueue(self, data):
+        new_node = Node(data)
 
         # If the queue is empty, the new node is both the front and rear
         if self.rear is None:
             self.front = self.rear = new_node
-            print(f"Enqueued: {new_data}")
+            print(f"Enqueued: {data}")
             return
 
         # Add the new node at the end of the queue and update rear
         self.rear.next = new_node
         self.rear = new_node
-        print(f"Enqueued: {new_data}")
+        print(f"Enqueued: {data}")
 
     def dequeue(self):
         if self.front is None:

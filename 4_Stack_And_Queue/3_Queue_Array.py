@@ -54,7 +54,7 @@ class CircularQueue:
         print()
 
 if __name__ == "__main__":
-    queue = CircularQueue(15)
+    queue = CircularQueue(5)
     queue.display()
     queue.EnQueue(10)
     queue.EnQueue(20)

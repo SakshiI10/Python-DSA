@@ -107,3 +107,4 @@ if __name__ == "__main__":
 
     print("Inorder traversal of the AVL tree:")
     avl.inorder(root)
+ 

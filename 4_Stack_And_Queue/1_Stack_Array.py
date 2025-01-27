@@ -35,7 +35,6 @@ class Stack:
             return None
         return self.array[self.top]
 
-# Example usage
 if __name__ == "__main__":
     stack = Stack(3)                    # Create a stack with a capacity of 5
     stack.push(10)
