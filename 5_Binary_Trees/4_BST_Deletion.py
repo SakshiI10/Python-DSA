@@ -55,7 +55,7 @@ def deleteNode(root, key):
         temp = minValueNode(root.right)
 
         # Copy the inorder successor's value to this node (root node now holds the smallest value)
-        root.val = temp.val
+        root.val = temp.val 
 
         # Delete the inorder successor (since its value is now copied to the root)
         root.right = deleteNode(root.right, temp.val)
