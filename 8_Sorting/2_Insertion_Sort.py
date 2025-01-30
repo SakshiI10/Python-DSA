@@ -15,6 +15,8 @@ arr = [64, 34, 25, 12, 22, 11, 90]
 insertion_sort(arr)
 print("Sorted array:", arr)
 
+# Insertion sort checks the element reversely one-by-one (left side of key which are already sorted)
+
 # Time Complexity:
 # Best Case (Sorted Array): O(n)
 # Average Case: O(n²)
@@ -23,3 +25,4 @@ print("Sorted array:", arr)
 
 # Is Insertion sort in place? Yes
 # Is Insertion sort stable? Yes
+
