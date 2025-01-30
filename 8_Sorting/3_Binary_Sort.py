@@ -25,7 +25,7 @@ print("Sorted array:", sorted_arr)
 # Time Complexity:
 # Best Case: 
 # No of comparisons: O(log n) per element
-# No of swaps: O(nlogn)
+# No of swaps: O(n)
 
 # Average Case:
 # No of comparisons: O(log n) per element

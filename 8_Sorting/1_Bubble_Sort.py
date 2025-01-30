@@ -17,7 +17,8 @@ print("Sorted array:", arr)
 # Best: O(n)
 # Average: O(n^2) 
 # Worst: O(n^2)
-# Space: O(1)
+
+# Space Complexity: O(1)
 
 # Is Bubble sort in place? Yes
 # Is Bubble sort stable? Yes

@@ -21,6 +21,7 @@ print("Sorted array:", arr)
 # Best Case (Sorted Array): O(n)
 # Average Case: O(n²)
 # Worst Case (Reverse Sorted): O(n²)
+
 # Space Complexity: O(1) 
 
 # Is Insertion sort in place? Yes
