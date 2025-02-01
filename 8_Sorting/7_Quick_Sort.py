@@ -1,4 +1,4 @@
-def partition(array, low, high):
+def partition(array, low, high): 
     # Choose the leftmost element as the pivot
     pivot = array[low]
     i = low + 1   
