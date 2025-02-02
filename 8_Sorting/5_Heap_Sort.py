@@ -20,7 +20,7 @@ def heap_sort(arr):
     n = len(arr)
 
     # Build a max heap
-    for i in range(n // 2 - 1, -1, -1):
+    for i in range(n // 2 - 1, -1, -1):  
         heapify(arr, n, i)
 
     # One by one extract elements from heap
