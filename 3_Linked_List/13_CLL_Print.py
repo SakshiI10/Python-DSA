@@ -29,3 +29,5 @@ second.next = third
 third.next = fourth
 fourth.next = head
 printList(head)
+
+# head remains the first node throughout the execution because we are updating temp, not head.
