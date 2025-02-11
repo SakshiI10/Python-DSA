@@ -23,7 +23,6 @@ class QueueUsingStacks:
         # Pop and return the top element from S2
         return self.S2.pop()
 
-
 if __name__ == "__main__":
     Q = QueueUsingStacks()
     Q.EnQueue(1)
