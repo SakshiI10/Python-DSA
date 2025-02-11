@@ -32,7 +32,7 @@ def Rec_print(head):
         print("None")
         return
     
-    print(head.data, end="->") 
+    print(head.data, end=" -> ") 
     Rec_print(head.next)
 
 ll = LinkedList()

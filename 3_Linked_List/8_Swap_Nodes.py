@@ -25,7 +25,7 @@ def Rec_print(head):
         print("None")
         return
     
-    print(head.data, end="->")  #head.data and head.next is an attribute
+    print(head.data, end=" -> ")  #head.data and head.next is an attribute
     Rec_print(head.next)
 
 ll = LinkedList()
@@ -35,4 +35,5 @@ ll.head.next.next = Node(3)
 ll.head.next.next.next = Node(4)
 ll.head.next.next.next.next = Node(5)
 ll.head = Swap_pairs(ll.head)
+
 Rec_print(ll.head)
