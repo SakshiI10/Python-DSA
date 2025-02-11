@@ -62,3 +62,6 @@ ll.append(5)
 print("Linked List:")
 ll.print_list()
 ll.print_middle()
+
+# Time complexity: O(n)
+# Space complexity: O(1)
