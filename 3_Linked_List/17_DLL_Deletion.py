@@ -58,3 +58,7 @@ printDLL(head)
 head = delete_end(head)
 printDLL(head)
 
+# Time Complexity:
+# Delete at head:	    O(1)	
+# Delete at tail: 	    O(n)
+# Delete at position: 	O(n)
