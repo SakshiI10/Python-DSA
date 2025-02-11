@@ -14,7 +14,7 @@ def Rec_print(head):
         print("None")
         return
     
-    print(head.data, end="->")  #head.data and head.next is an attribute
+    print(head.data, end=" -> ")  #head.data and head.next is an attribute
     Rec_print(head.next)
 
 ll = LinkedList()
