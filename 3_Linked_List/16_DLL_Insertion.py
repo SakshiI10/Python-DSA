@@ -51,3 +51,7 @@ head=insert_at_end(head, 3)
 printDLL(head)
 head=insert_at_end(head, 4)
 printDLL(head)
+
+# Time Complexities:
+# Insert (at beginning/end):	O(1)
+# Insert (at index):	        O(n)
