@@ -45,3 +45,4 @@ if __name__ == '__main__':
 
     # Print the sorted array
     print("\nSorted Array:", array)
+
