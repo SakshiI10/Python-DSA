@@ -2,7 +2,7 @@ def merge_sort(arr):
     if len(arr) > 1:
         # Finding the middle of the array
         mid = len(arr) // 2
-        
+         
         # Dividing the array elements into 2 halves
         L = arr[:mid]
         R = arr[mid:]
