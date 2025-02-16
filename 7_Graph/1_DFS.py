@@ -5,7 +5,7 @@ graph = {
     'C': ['D'],
     'D': ['A']
 }  
-
+  
 # Initialize visited dictionary
 visited = {node: False for node in graph}
 
