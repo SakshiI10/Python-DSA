@@ -13,9 +13,11 @@ class Solution:
         for i in range(n):
             if arr[i] == i + 1:  # 1-based index comparison
                 result.append(i + 1)
+            else:
+                return
         return result
 
 sol = Solution()
-arr = [15, 2, 45, 12, 7]
+arr = [15, 3, 45, 12, 7]
 n = len(arr)
 print(sol.valueEqualToIndex(arr, n))  # Output: [2, 4]
