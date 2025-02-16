@@ -21,8 +21,8 @@ class Solution:
 solution = Solution()
 N1 = 7
 A1 = [7, 8, 3, 4, 2, 9, 5]
-print(solution.leftElement(A1, N1))  # Output: 4
+print(solution.leftElement(A1, N1))  # Output: 5
 
 N2 = 8
 A2 = [8, 1, 2, 9, 4, 3, 7, 5]
-print(solution.leftElement(A2, N2))  # Output: 5
+print(solution.leftElement(A2, N2))  # Output: 4

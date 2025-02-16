@@ -28,7 +28,9 @@ class Solution:
 
 sol = Solution()
 n = 6
-arr = [1, 2, 3, 4, 5, 5]
+arr1 = [1, 2, 3, 4, 5, 5]
+arr2 = [1, 2, 3, 5, 4, 5]
 key = 5
-print(sol.findIndex(arr, n, key))  # Output: (4, 5)
+print(sol.findIndex(arr1, n, key))  # Output: (4, 5)
+print(sol.findIndex(arr2, n, key))  # Output: (4, 5)
        
