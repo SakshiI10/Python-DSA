@@ -15,4 +15,4 @@ sol = Solution()
 arr = [2, 8, 7, 1, 5]
 n = len(arr)
 output = sol.findElements(arr, n)
-print(output)  
+print(output)
