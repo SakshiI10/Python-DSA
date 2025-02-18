@@ -29,7 +29,7 @@ class Solution:
 sol = Solution()
 n = 6
 arr1 = [1, 2, 3, 4, 5, 5]
-arr2 = [1, 2, 3, 5, 4, 5]
+arr2 = [5, 2, 3, 4, 6, 7]
 key = 5
 print(sol.findIndex(arr1, n, key))  # Output: (4, 5)
 print(sol.findIndex(arr2, n, key))  # Output: (4, 5)
