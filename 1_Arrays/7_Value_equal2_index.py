@@ -13,8 +13,6 @@ class Solution:
         for i in range(n):
             if arr[i] == i + 1:  # 1-based index comparison
                 result.append(i + 1)
-            else:
-                return
         return result
 
 sol = Solution()
