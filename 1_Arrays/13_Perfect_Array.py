@@ -14,8 +14,8 @@ class Solution:
 
 n = 5
 arr = [1, 2, 3, 2, 1]
-solution = Solution()
-if solution.isPerfect(n, arr):
+sol = Solution()
+if sol.isPerfect(n, arr):
     print("PERFECT")
 else:
     print("NOT PERFECT")

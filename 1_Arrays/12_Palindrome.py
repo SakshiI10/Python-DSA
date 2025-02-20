@@ -16,7 +16,7 @@ class Solution:
             if not self.is_palindrome(num):
                 return 0
         return 1
-
+ 
 sol = Solution()
 print(sol.PalinArray([111, 222, 333, 444, 555], 5))  # Output: 1
 print(sol.PalinArray([121, 131, 20], 3))  # Output: 0
