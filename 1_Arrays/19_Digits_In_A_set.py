@@ -8,14 +8,12 @@ class Solution:
     def countNumbers(self, N):
         valid_digits = {'1', '2', '3', '4', '5'}
         count = 0
-        result = []
 
-        for num in range(1, N + 1):
-            if all(digit in valid_digits for digit in str(num)):
+        for num in range(N):  # Starts from 0 to N-1 and is not an index
+            if num > 0 and set(str(num)).issubset(valid_digits): 
                 count += 1
-                result.append(num)
 
-        return result, count
+        return count
 
 N = 20
 sol = Solution()
