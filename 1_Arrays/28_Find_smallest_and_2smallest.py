@@ -12,7 +12,6 @@ class Solution:
             return -1
         
         arr.sort()
-
         smallest=arr[0]
         sec_smallest=arr[1]
 
