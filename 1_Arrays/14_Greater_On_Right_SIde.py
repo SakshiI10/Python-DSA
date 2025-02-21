@@ -8,13 +8,12 @@ Output: 17 5 5 5 2 -1'''
 
 class Solution:
 	def nextGreatest(self,arr, n):
-		max_right = -1
-		
+		max_right=-1
 		for i in range(n-1, -1, -1):
-		    current = arr[i]
-		    arr[i] = max_right
-		    if current > max_right:
-		        max_right = current
+			current=arr[i]
+			arr[i]=max_right
+			if current>max_right:
+				max_right=current
 		return arr
 
 sol = Solution()
