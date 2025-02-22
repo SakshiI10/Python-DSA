@@ -6,12 +6,12 @@ Output: 25'''
 
 class Solution:
     def findMax(self, arr):
-        max_height = 0
-        
-        for i in range(0, len(arr), 2):
-            feet = arr[i]
-            inches = arr[i + 1]
-            
+        max_height=0
+        n=len(arr)
+
+        for i in range(0, n, 2):
+            feet=arr[i]
+            inches=arr[i+1]
             total_inches = feet * 12 + inches
             
             if total_inches > max_height:
@@ -21,6 +21,6 @@ class Solution:
 
 sol = Solution()    
 arr1 = [1, 2, 2, 1]
-arr2 = [3, 2, 2, 3, 1, 2]
 print(sol.findMax(arr1))  # Expected Output: 25
+arr2 = [3, 2, 2, 3, 1, 2]
 print(sol.findMax(arr2))  # Expected Output: 38
