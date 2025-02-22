@@ -9,3 +9,8 @@ from typing import List
 class Solution:
     def findElementAtIndex(self, key, arr):
         return arr[key]
+    
+sol=Solution()
+arr=[10, 20, 30, 40, 50]
+key=2
+print(sol.findElementAtIndex(key, arr))
