@@ -6,18 +6,7 @@ Output: 600'''
 
 class Solution:
     def totalFine(self, date, car, fine):
-        n = len(car)
-        total_fine = 0
         
-        for i in range(n):
-            if date % 2 == 0:
-                if car[i] % 2 != 0: 
-                    total_fine += fine[i]
-            else:
-                if car[i] % 2 == 0:  
-                    total_fine += fine[i]
-                    
-        return total_fine
 
 date = 12
 car = [2375, 7682, 2325, 2352]

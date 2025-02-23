@@ -9,7 +9,6 @@ class Solution:
     def sumArray(self, arr):
         n = len(arr)
         total_sum = sum(arr)
-        
         result = []
         
         for i in range(n):

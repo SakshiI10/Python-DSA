@@ -6,14 +6,14 @@ Output: [8, 6, 2, 1] '''
 
 class Solution:
     def uniqueId(self, arr):
-        unique_elements = []
-        n=len(arr)
-        
-        for i in range(n):
-            if arr[i] not in unique_elements:  
-                unique_elements.append(arr[i])
+        unique_elements = set()
+        n = len(arr)
 
-        return unique_elements
+        for i in range(n):
+            if arr[i] not in unique_elements:
+                unique_elements.add(arr[i])
+
+        return list(unique_elements)
     
 arr = [8, 8, 6, 2, 1]
 sol = Solution()
