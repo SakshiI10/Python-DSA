@@ -6,11 +6,11 @@ Output: 1'''
 class Solution:
     def minimumApple(self, arr):
         unique_persons = set(arr)
-        # The minimum apples needed is the count of unique persons
         return len(unique_persons)
 
-solution = Solution()
-print("Minimum apples required for arr1:", solution.minimumApple(arr1))  # Output: 1
+sol = Solution()
+arr1 = [1, 1, 1, 1, 1]
+print("Minimum apples required for arr1:", sol.minimumApple(arr1))  # Output: 1
 
 arr2 = [1, 2, 3, 1, 2]
-print("Minimum apples required for arr2:", solution.minimumApple(arr2))  # Output: 3
+print("Minimum apples required for arr2:", sol.minimumApple(arr2))  # Output: 3
