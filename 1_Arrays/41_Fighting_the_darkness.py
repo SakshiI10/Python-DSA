@@ -8,14 +8,7 @@ Output: 12'''
 
 class Solution:
     def maxPoint(self, N, K, A, B):
-        max_points = 0
         
-        for i in range(N):
-            max_reads = K // A[i]
-            points = max_reads * B[i]
-            max_points = max(max_points, points)
-        
-        return max_points
 
 sol = Solution()
 print(sol.maxPoint(3, 10, [3, 4, 5], [4, 4, 5])) 

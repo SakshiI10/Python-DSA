@@ -12,10 +12,14 @@ class Solution:
         for i in range(1, n, 2):
             if arr[i] <= arr[i - 1]:
                 arr[i], arr[i - 1] = arr[i - 1], arr[i]
+                print(arr)
                 return 'false'
+        print(arr)
         return 'true'
 
 sol = Solution()
 
-arr = [5, 4, 3, 2, 1]
-print(sol.formatArray(arr))  
+arr1 = [5, 4, 3, 2, 1]
+print(sol.formatArray(arr1))  
+arr2 = [4, 3, 1, 1]
+print(sol.formatArray(arr2))  
