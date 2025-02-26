@@ -1,3 +1,11 @@
+'''Given an array arr[] where no two adjacent elements are same, find the index of a peak element. An element is considered to be a peak if it is greater than its adjacent elements (if they exist). If there are multiple peak elements, return index of any one of them. The output will be "true" if the index returned by your function is correct; otherwise, it will be "false".
+
+Examples:
+Input: arr = [1, 2, 4, 5, 7, 8, 3]
+Output: true
+Input: arr = [10, 20, 15, 2, 23, 90, 80]
+Output: true'''
+
 class Solution:   
     def peakElement(self, arr):
         n = len(arr)
