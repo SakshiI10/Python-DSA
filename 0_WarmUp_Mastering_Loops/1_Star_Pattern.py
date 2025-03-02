@@ -5,16 +5,17 @@
 *****
 ***** '''
 
-n=5
+def pattern_using_one_loop(n):
+    for i in range(n):
+        print("*" * n)
 
-print("Using one loop: ")
-# Using one loop
-for i in range(n):
-    print("*" * n)  # Print 5 stars in a single row
+def pattern_using_two_loops(n):
+    for i in range(n):
+        for j in range(n):
+            print('*', end="")
+        print() 
 
-print("Using two loops: ")
-# Using two loops
-for i in range(n):
-    for j in range(n):
-        print('*', end="") 
-    print()
+n = 5
+pattern_using_one_loop(n)
+print()
+pattern_using_two_loops(n)
