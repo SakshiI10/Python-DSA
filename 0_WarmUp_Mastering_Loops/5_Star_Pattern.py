@@ -5,6 +5,9 @@
    **
     * '''
 
+def pattern_using_single_loop(n):
+    for i in range(n):
+        print(' '*i + '*'*(n-i))
+
 n=5
-for i in range(n+1):
-    print(' ' * i + '*' * (n - i))
+pattern_using_single_loop(n)
