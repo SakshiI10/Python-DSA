@@ -21,3 +21,4 @@ arr1 = [1, 2, 3, 4, 5]
 arr2 = [1, 2, 3, 4, 5]
 print(reverse(arr1))  
 print(reverse2(arr2))  
+ 
