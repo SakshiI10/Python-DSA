@@ -12,6 +12,7 @@ Output: -1'''
 
 class Solution:
     def search(self, arr, x):
+        n=len(arr)
         for i in range(len(arr)):
             if arr[i] == x:
                 return i
