@@ -1,6 +1,6 @@
 class Solution:
+    #Brute Force
     def rearrange(self, arr):
-        #Brute Force
         n=len(arr)
         pos=[]
         neg=[]
@@ -18,9 +18,11 @@ class Solution:
             result.append(neg[i])
             i += 1
             j += 1
-            
+        
         return result
-
+            
 sol=Solution()
 arr=[3, 1, -2, -5, 2, -4]
+arr2=[1, 2, -4, -5]
 print(sol.rearrange(arr))
+print(sol.rearrange(arr2))
