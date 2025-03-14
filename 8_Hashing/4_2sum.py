@@ -8,7 +8,7 @@ class Solution():
         for i in range(n):
             compliment=k-arr[i]
             if compliment in hash_table:
-                print("Yes")
+                # print("Yes")
                 return [hash_table[compliment], i]
             hash_table[arr[i]] = i
                 
@@ -18,3 +18,6 @@ a = [2, 6, 5, 8, 11]
 k = 10
 len1 = sol.twosum(a, k)
 print(len1)
+
+# arr[i] returns the value at index i → Current element in the loop
+# hash_table[compliment] returns the index where compliment was stored
