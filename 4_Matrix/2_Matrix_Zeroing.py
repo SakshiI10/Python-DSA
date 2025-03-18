@@ -1,4 +1,5 @@
 class Solution:
+    # Space Complexity: O(n2)
     def matrix(self, arr, n, m):
         row = [0] * n  
         col = [0] * m  
