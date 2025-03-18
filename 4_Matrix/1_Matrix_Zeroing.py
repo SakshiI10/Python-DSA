@@ -1,4 +1,5 @@
 class Solution:
+    #Brute Force: O(n3)
     def mark_row(self, arr, i, m):
         for j in range(m):
             if arr[i][j] != 0:
@@ -36,8 +37,8 @@ arr = [
     [1, 1, 1, 1]
 ]
 n, m = 4, 4
-solution = Solution()
-zero_count = solution.matrix(arr, n, m)
+sol = Solution()
+zero_count = sol.matrix(arr, n, m)
 
 # Print the modified matrix and zero count
 for row in arr:
