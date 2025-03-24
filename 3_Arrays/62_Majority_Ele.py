@@ -15,4 +15,4 @@ sol=Solution()
 arr=[2, 2, 3, 3, 1, 2, 2]
 print(sol.majority(arr))
 
-#Not efficient, so did it using dictionary (present in hashing folder)
+# Better solution is done using hashing

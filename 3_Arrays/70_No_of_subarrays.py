@@ -15,3 +15,5 @@ sol=Solution()
 arr=[1, 2, 3, -3, 1, 1, 1, 4, 2, -3]
 k=3
 print(sol.max_subarray(arr, k))
+
+# Better solution is done using hashing

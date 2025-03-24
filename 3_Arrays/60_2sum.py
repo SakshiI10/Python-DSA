@@ -18,3 +18,5 @@ a = [2, 6, 5, 8, 11]
 k = 14
 len1 = sol.twosum(a, k)
 print(len1)
+
+# Better solution is done using hashing
