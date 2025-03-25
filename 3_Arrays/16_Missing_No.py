@@ -14,7 +14,6 @@ class Solution:
         for i in range(n-1):
             if a[i] != b[i]:
                 return a[i]
-        
         return a[-1]
 
 sol = Solution()
