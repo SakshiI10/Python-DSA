@@ -1,14 +1,13 @@
 # Search smallest index: Use lower bound
 
 class Solution:
-    def binarysearch(self, arr, target):
-        n=len(arr)
+    def insert_position(self, arr, k, n):
         low, high = 0, n-1
-        ans = target
+        ans = k
 
         while(low<=high):
             mid=(low+high)//2
-            if arr[mid] >= target:
+            if arr[mid] >= k:
                 ans=mid
                 high=mid-1
             else:
@@ -17,7 +16,8 @@ class Solution:
     
 sol = Solution()
 arr=[1, 2, 4, 7]
+n=len(arr)
 k1=2
 k2=6
-print(sol.binarysearch(arr, k1))
-print(sol.binarysearch(arr, k2))
+print(sol.insert_position(arr, k1, n))
+print(sol.insert_position(arr, k2, n))

@@ -1,7 +1,7 @@
 class Solution:
     def lower_bound(self, arr, target, n):
         low, high = 0, n-1
-        ans = target
+        ans = n
 
         while(low<=high):
             mid=(low+high)//2
@@ -12,13 +12,13 @@ class Solution:
                 low=mid+1
         return ans
 
-    def upper_bound(elf, arr, target, n):
+    def upper_bound(self, arr, target, n):
         low, high = 0, n-1
-        ans = target
+        ans = n
 
         while(low<=high):
             mid=(low+high)//2
-            if arr[mid] >= target:
+            if arr[mid] > target:
                 ans=mid
                 high=mid-1
             else:
