@@ -15,7 +15,7 @@ class Solution:
         return arr[-d:] + arr[:-d]
 
 sol=Solution()
-arr = [9, 8, 7, 6, 4, 2, 1, 3]
+arr = [1, 2, 3, 4, 5]
 d = 1
 sol.left_rotate(arr, d)
 sol.right_rotate(arr, d)
