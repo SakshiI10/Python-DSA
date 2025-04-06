@@ -6,14 +6,14 @@ Output: 8'''
 class Solution:
     def calculateFriendliness(self, arr):
         n = len(arr)
-        diff = 0
+        ans = 0
         
         for i in range(n):
             # Use modulo to handle the circular nature of the array
             abs_diff = abs(arr[(i + 1) % n] - arr[i])
-            diff += abs_diff
+            ans += abs_diff
         
-        return diff
+        return ans
 
 sol=Solution()
 arr1 = [4, 1, 5]
