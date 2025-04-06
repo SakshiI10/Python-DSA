@@ -6,14 +6,17 @@ Output: true'''
 
 class Solution:
     def formatArray(self, arr):
-        arr.sort()  
         n = len(arr)
         
+        for i in range(0, n - 1, 2):
+            if arr[i] >= arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+
         for i in range(1, n, 2):
             if arr[i] <= arr[i - 1]:
-                arr[i], arr[i - 1] = arr[i - 1], arr[i]
                 print(arr)
                 return 'false'
+                
         print(arr)
         return 'true'
 
