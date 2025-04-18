@@ -7,16 +7,18 @@ Input:
 Output: 1'''
 
 class Solution:
-    def is_palindrome(self, num):
-        s = str(num)
+    def isPalindrome(self, n):
+        s = str(n)
         return s == s[::-1]
 
-    def PalinArray(self, arr, n):
+    def isPalinArray(self, arr, n):
         for num in arr:
-            if not self.is_palindrome(num):
-                return 0
-        return 1
- 
+            if not self.isPalindrome(num):
+                return 'false'
+        return 'true'
+
+# Test
 sol = Solution()
-print(sol.PalinArray([111, 222, 333, 444, 555], 5))  # Output: 1
-print(sol.PalinArray([121, 131, 20], 3))  # Output: 0
+print(sol.isPalinArray([111, 222, 333, 444, 555], 5))  
+print(sol.isPalinArray([121, 131, 20], 3))             
+
