@@ -21,4 +21,4 @@ class Solution:
     
 sol=Solution()
 arr = [4, 5, 1, 2, 3]
-print(sol.Rearrange(arr))
+print(sol.Rearrange(arr))  
