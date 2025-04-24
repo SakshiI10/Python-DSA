@@ -9,15 +9,8 @@ Output: 15
 
 class Solution:
     def findSum(self, arr, n):
-        unique_elements = set()
-        sum = 0
-        
-        for i in range(n):
-            if arr[i] not in unique_elements:  
-                unique_elements.add(arr[i])  
-                sum += arr[i]  
-
-        return sum
+        unique_num = set(arr)
+        return sum(unique_num)
 
 sol = Solution()
 N = 5
