@@ -1,4 +1,5 @@
 # Given an array arr[] of integers. Write a program to check whether an arithmetic progression can be formed using all the given elements. 
+
 # Input: arr[] = [0, 12, 4, 8]
 # Output: true
 
