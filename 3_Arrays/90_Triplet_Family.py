@@ -4,6 +4,7 @@
 # Output: true
 
 class Solution:
+
     def findTriplet(self, arr):
         n = len(arr)
         arr.sort()
