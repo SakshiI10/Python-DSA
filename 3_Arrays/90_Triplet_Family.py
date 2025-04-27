@@ -19,6 +19,7 @@ class Solution:
                 else:
                     k -= 1
         return False
+    
 sol=Solution()
 arr=[1, 2, 3, 4, 5]
 print(sol.findTriplet(arr))
