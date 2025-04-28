@@ -10,7 +10,7 @@ class Solution:
         arr.sort()
         for i in range(n - 1, -1, -1):
             j = 0
-            k = i - 1
+            k = i
             while j < k:
                 if arr[i] == arr[j] + arr[k]:
                     return True
