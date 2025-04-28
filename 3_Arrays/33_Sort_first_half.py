@@ -7,12 +7,12 @@ Output: 10 20 40 30 '''
 
 class Solution:
     def customSort(self, arr, n):
-        arr.sort()
+        n=len(arr)
         k = n // 2
         
-        first_half = arr[:k]  
-        second_half = arr[k:]  
-        second_half.reverse()  
+        first_half = sorted(arr[:k])
+        second_half = sorted(arr[k:])
+        second_half.reverse()
         
         return first_half + second_half
 
