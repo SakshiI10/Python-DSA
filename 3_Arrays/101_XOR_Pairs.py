@@ -24,4 +24,3 @@ class Solution:
 sol=Solution()
 arr=[1, 2, 3]
 print(sol.countOddXorPairs(arr))
- 
