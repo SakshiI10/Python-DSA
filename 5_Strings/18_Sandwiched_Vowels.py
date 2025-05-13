@@ -19,4 +19,4 @@ class Solution():
 
 sol = Solution()
 S = "bab"
-print(sol.Sandwiched_Vowel(S))  # Output: bb
+print(sol.Sandwiched_Vowel(S)) 
