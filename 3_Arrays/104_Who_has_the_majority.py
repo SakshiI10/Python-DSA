@@ -11,18 +11,17 @@ Output: 4'''
 class Solution:
     #Function to find element with more appearances between two elements in an array.    
     def majorityWins(self, arr, n, x, y):
-        count_x = 0
-        count_y = 0
+        count_x, count_y = 0, 0
         
-        for num in arr:
-            if num == x:
+        for i in range(n):
+            if arr[i] == x:
                 count_x += 1
-            elif num == y:
+            elif arr[i] == y:
                 count_y += 1
-        
+                
         if count_x > count_y:
             return x
-        elif count_y > count_x:
+        elif count_x < count_y:
             return y
         else:
             return min(x, y)
