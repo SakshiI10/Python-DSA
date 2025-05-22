@@ -1,5 +1,5 @@
 '''
-Given an array arr of integers, the task is to count the number of elements of the array which are Fibonacci numbers
+Given an array arr of integers, the task is to count the number of elements of the array which are Fibonacci numbers.
 
 Input: arr[] = [4, 2, 8, 5, 20, 1, 40, 13, 23]
 Output: 5'''
