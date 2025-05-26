@@ -19,7 +19,7 @@ class Solution:
         return -sum
 
 sol=Solution()
-N = 4
-M = 3
 A = [-6, 0, 35, 4]
-print(sol.maxProfit(A, N, M))  # Output: 6
+N = len(A)
+M = 3
+print(sol.maxProfit(A, N, M))  
