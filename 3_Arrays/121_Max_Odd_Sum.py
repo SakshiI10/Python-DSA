@@ -9,9 +9,9 @@ Output: 9'''
 
 class Solution:
     def findMaxOddSum(self, arr):
-        min_odd = float('inf')
-        isOdd = False
         sum = 0
+        isOdd = False
+        min_odd = float('inf')
 
         for num in arr:
             if num > 0:
