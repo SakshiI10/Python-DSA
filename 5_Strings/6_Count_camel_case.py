@@ -15,7 +15,7 @@ class Solution:
         
         return count
 
-sol = Solution()
+sol = Solution() 
 S1 = "ckjkUUYII"
 S2 = "CamelCaseExample"
 
