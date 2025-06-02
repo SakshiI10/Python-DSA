@@ -8,9 +8,9 @@ Output: 2'''
 
 class Solution:
     def RedOrGreen(self, N, S):
-        count_G = S.count('G')
-        return count_G
-
+        red_count = S.count('R')
+        green_count = S.count('G')
+        return min(red_count, green_count)
 
 sol = Solution()
 N = 5
