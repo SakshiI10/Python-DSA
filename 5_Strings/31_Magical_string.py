@@ -8,11 +8,13 @@ Input: S = varun
 Output: ezifm'''
 
 class Solution:
-    def magicalString (ob,S):
-        n=len(S)
-        for i in range(n):result = []
+    def magicalString(self, S):
+        res = []
         for char in S:
             if 'a' <= char <= 'z':
                 reciprocal_char = chr(ord('z') - (ord(char) - ord('a')))
-                result.append(reciprocal_char)
-        return ''.join(result)
+                res.append(reciprocal_char)
+        return ''.join(res)
+
+sol=Solution()
+print(sol.magicalString('varun'))  
