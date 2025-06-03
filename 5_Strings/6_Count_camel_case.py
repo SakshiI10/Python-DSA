@@ -20,4 +20,4 @@ S1 = "ckjkUUYII"
 S2 = "CamelCaseExample"
 
 print(sol.countCamelCase(S1))  # Output: 5
-print(sol.countCamelCase(S2))  # Output: 2
+print(sol.countCamelCase(S2))  # Output: 3
