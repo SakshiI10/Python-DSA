@@ -5,8 +5,8 @@ Input: S = geeksforgeeks
 Output: 4335736743357'''
 
 class Solution:
-    def printNumber(self, S, n):
-        char_to_digit = {
+    def printNumber(self, s, n):
+        keypad = {
             'a': '2', 'b': '2', 'c': '2',
             'd': '3', 'e': '3', 'f': '3',
             'g': '4', 'h': '4', 'i': '4',
@@ -17,11 +17,10 @@ class Solution:
             'w': '9', 'x': '9', 'y': '9', 'z': '9'
         }
 
-        decimal_representation = []
-
-        for char in S: 
-            decimal_representation.append(char_to_digit[char])  
-        return ''.join(decimal_representation)  
+        res=''
+        for char in s:
+            res += keypad[char]
+        return res 
     
 sol = Solution() 
 S = "geeksforgeeks"
