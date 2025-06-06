@@ -24,6 +24,7 @@ class Solution:
         rev_str=combined[::-1]
         return rev_str
 
+
 sol = Solution()
 S1= "Geeks"
 S2= "forGeeks"  

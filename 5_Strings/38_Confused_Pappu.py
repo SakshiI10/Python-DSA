@@ -7,14 +7,14 @@ Explanation: maximum possible extra amount = 59 - 56 = 3.'''
 
 class Solution:
     def findDiff(self, amount):
-        amount_str = list(str(amount))
-        
-        for i in range(len(amount_str)):
-            if amount_str[i] == '6':
-                amount_str[i] = '9'
-        
-        modified_amount = int(''.join(amount_str))
-        diff = modified_amount - amount
+        num=''
+        for i in str(amount):
+            if i=='6':
+                num += '9'
+            else:
+                num += i
+                
+        diff=abs(int(num)-amount)
         return diff
 
 sol = Solution()
