@@ -6,6 +6,7 @@ Output: 1234'''
 
 class Solution:
     def removeCharacters(self, S):
+        # With string:
         result = ""
         
         for char in S:
@@ -13,7 +14,16 @@ class Solution:
                 result += char
         
         return result
-
+    
+        # With list:
+        # res=[]
+        
+        # for char in str1:
+        #     if char not in str2:
+        #         res.append(char)
+            
+        # return ''.join(res)
+    
 sol = Solution()
 S1 = "AA1d23cBB4"
 S2 = "a1b2c3"
