@@ -8,11 +8,11 @@ Explanation: maximum possible extra amount = 59 - 56 = 3.'''
 class Solution:
     def findDiff(self, amount):
         num=''
-        for i in str(amount):
-            if i=='6':
+        for char in str(amount):
+            if char=='6':
                 num += '9'
             else:
-                num += i
+                num += char
                 
         diff=abs(int(num)-amount)
         return diff
