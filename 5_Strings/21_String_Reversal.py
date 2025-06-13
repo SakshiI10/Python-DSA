@@ -6,15 +6,14 @@ Output: "SKEGROF"'''
 
 class Solution:
     def reverseString(self, s):
-        seen = set()
-        result = []
+        res=[]
         
         for char in reversed(s):
-            if char != ' ' and char not in seen:
-                seen.add(char)
-                result.append(char)
+            if char not in res and char != ' ':
+                res.append(char)
         
-        return ''.join(result)
+        return ''.join(res)
+        
 
 sol = Solution()
 print(sol.reverseString("GEEKS FOR GEEKS"))  # Output: "SKEGROF"
