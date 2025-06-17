@@ -9,18 +9,17 @@ Output: SHE!'''
 
 class Solution:
     def solve(self, a):
-        vowel = set('aeiou')
-        consonants = ""
+        vowels = set('aeiou')
+        cons = set()
 
         for char in a:
-            if char not in vowel and char not in consonants:
-                consonants += char
+            if char not in vowels:
+                cons.add(char)
 
-        n = len(consonants)
-        if n % 2 == 0:
-            return "SHE!"
+        if len(cons) % 2 == 0:
+            return 'SHE!'
         else:
-            return "HE!"
+            return 'HE!'
 
 solution = Solution()
 a = "jpmztf"
