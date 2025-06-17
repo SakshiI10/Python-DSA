@@ -1,15 +1,20 @@
+'''
+Given two unsorted arrays a[] and b[] each consisting of distinct elements , the task is to return the of elements in the union of the two arrays in sorted order.
+
+Input: a[] = [89, 24, 75, 11, 23], b[] = [89, 2, 4]
+Output: [2, 4, 11, 23,  24, 75, 89]
+'''
+
 class Solution:
-    def union(self, arr1, arr2):
-        unique_element=set()
-        n1=len(arr1)
-        n2=len(arr2)
-        for i in range(n1):
-            if arr1[i] not in unique_element:
-                unique_element.add(arr1[i])
-        for i in range(n2):
-            if arr2[i] not in unique_element:
-                unique_element.add(arr2[i])
-        return unique_element
+    def union(self, a, b):
+        res=set()
+        
+        for num in a:
+            res.add(num)
+        for num in b:
+            res.add(num)
+            
+        return sorted(res)
 
 sol=Solution()
 arr1=[1, 1, 2, 3, 4, 5]
