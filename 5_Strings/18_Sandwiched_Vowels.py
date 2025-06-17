@@ -6,16 +6,17 @@ Output : bb'''
 
 class Solution():
     def Sandwiched_Vowel(self, s):
-        vowels = set('aeiou')
-        n = len(s)
-        result = []
-
+        n=len(s)
+        vowels=set('aeiou')
+        res=""
+        
         for i in range(n):
-            if i > 0 and i < n - 1:
-                if s[i - 1] not in vowels and s[i] in vowels and s[i + 1] not in vowels:
+            if i>0 and i<n-1:
+                if s[i-1] not in vowels and s[i] in vowels and s[i + 1] not in vowels:
                     continue
-            result.append(s[i])
-        return ''.join(result)
+            res += s[i]
+                
+        return res
 
 sol = Solution()
 S = "bab"
