@@ -7,15 +7,22 @@ Output: [1, 2, 3, 4]'''
 class Solution:
     def removeDuplicate(self, arr):
         seen=set()
-        res=[]
         
         for num in arr:
             if num not in seen:
-                seen.add(num)
-                res.append(num)
-                
-        return res
+                seen.add(num) 
+        return list(seen)
+    
+    def checkDuplicates(self, arr):
+        seen = set()
+
+        for num in arr:
+            if num in seen:
+                return 'true'
+            seen.add(num)
+        return 'false'
     
 sol=Solution()
-arr=[1, 2, 3, 1, 4, 2]
+arr=[1, 2, 3, 4]
 print(sol.removeDuplicate(arr))
+print(sol.checkDuplicates(arr))  
