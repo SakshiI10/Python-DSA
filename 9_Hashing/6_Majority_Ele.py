@@ -8,6 +8,7 @@ class Solution:
                 hash_table[num] += 1
             else:
                 hash_table[num]=1
+                
         for key, value in hash_table.items():
             if value > n//2:
                 return key

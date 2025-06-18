@@ -3,11 +3,13 @@ class Solution:
         hash_table={}
         n=len(arr)
         res=[]
+
         for num in arr:
             if num in hash_table:
                 hash_table[num] += 1
             else:
                 hash_table[num]=1
+                
         for key, value in hash_table.items():
             if value > n//3:
                 res.append(key)
