@@ -11,7 +11,6 @@ class Solution:
         n = len(s)
         mid = n // 2
         
-        # Determine the two halves
         if n % 2 == 0:
             left = s[:mid]
             right = s[mid:]
@@ -19,7 +18,6 @@ class Solution:
             left = s[:mid]
             right = s[mid+1:]
 
-        # Function to count frequency manually
         def count_freq(substring):
             freq = {}
             for char in substring:
@@ -29,11 +27,9 @@ class Solution:
                     freq[char] = 1
             return freq
 
-        # Count character frequencies in both halves
         left_count = count_freq(left)
         right_count = count_freq(right)
 
-        # Check if both frequency maps are the same
         if len(left_count) != len(right_count):
             return "NO"
 
@@ -45,4 +41,4 @@ class Solution:
 
 sol=Solution()
 S="bvas"
-print(sol.passed(S))  # Output: YES
+print(sol.passed(S)) 
