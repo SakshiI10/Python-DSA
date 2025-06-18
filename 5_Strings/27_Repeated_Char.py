@@ -41,5 +41,5 @@ class Solution:
         return -1
 
 sol = Solution()
-print(sol.firstRep("geeksforgeeks"))  # Output: g
-print(sol.firstRep("abcde"))          # Output: #
+print(sol.repeatingCharacter("geeksforgeeks"))  # Output: g
+print(sol.repeatingCharacter("abcde"))          # Output: #
