@@ -3,11 +3,13 @@ class Solution:
         #Brute Force
         n=len(arr)
         res=[]
+
         for i in range(n):
             count=0
             for j in range(n):
                 if (arr[i]==arr[j]):
                     count += 1
+                    
             if count>n//3 and arr[i] not in res:
                 res.append(arr[i])
         return res if res else -1
