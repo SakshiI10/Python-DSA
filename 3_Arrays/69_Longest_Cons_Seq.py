@@ -9,24 +9,23 @@ class Solution:
         return count
     
     def longest_cons_subseq2(self, arr):
-        arr = list(set(arr)) 
-        arr.sort()  
+        arr=list(set(arr))
+        arr.sort()
+        n=len(arr)
+        count=1
+        max_count=1
+        last_smaller=arr[0]
 
-        longest = 1
-        count = 1 
-        last_smaller = arr[0]  
-        n = len(arr)
-        
         for i in range(n):
-            if arr[i] == last_smaller + 1:  
+            if arr[i] == last_smaller+1:
                 count += 1
+                max_count=max(max_count, count)
             else:
                 count = 1
-            
-            longest = max(longest, count)
-            last_smaller = arr[i] 
-        
-        return longest
+
+            last_smaller=arr[i]
+
+        return max_count
 
 sol = Solution()
 arr1 = [102, 4, 100, 1, 101, 3, 2, 1, 1]

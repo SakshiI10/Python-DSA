@@ -8,16 +8,16 @@ class Solution:
     def lenOfLongIncSubArr(self, arr):
         n=len(arr)
         length=1
-        max_length=1
+        max_len=1
         
-        for i in range(1, n):
-            if arr[i]>arr[i-1]:
+        for i in range(n-1):
+            if arr[i]<arr[i+1]:
                 length += 1
-                max_length=max(max_length, length)
+                max_len=max(length, max_len)
             else:
                 length=1
                 
-        return max_length
+        return max_len
     
 sol=Solution()
 arr=[5, 6, 3, 5, 7, 8, 9, 1, 2]

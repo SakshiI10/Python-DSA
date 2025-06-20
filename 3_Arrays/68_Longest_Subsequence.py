@@ -3,17 +3,16 @@ from typing import List
 class Solution():
     #Brute Force
     def getLongestSubarray(self, a: [int], k: int) -> int:
-        n = len(a)
-        length = 0
-        
-        for i in range(n): # starting index
-            s = 0
-            for j in range(i, n): # ending index
-                # add the current element to the subarray a[i...j-1]:
+        n=len(a)
+        length=0
+
+        for i in range(n):
+            s=0
+            for j in range(i+1, n):
                 s += a[j]
 
-                if s == k:
-                    length = max(length, j - i + 1)
+                if s==k:
+                    return max(length, j-i+1)
         return length
 
 sol=Solution()
