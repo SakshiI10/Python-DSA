@@ -2,18 +2,17 @@ from typing import List
 
 class Solution():
     def threesum(self, arr: List[int], target: int):
-        # arr.sort()
-        n=len(arr)
-        res = set()
+        n = len(arr)
+        hash_table = set()        
+        res = set()          
 
         for i in range(n):
-            hash_table = set()  
             for j in range(i + 1, n):
                 complement = target - (arr[i] + arr[j])
                 if complement in hash_table:
                     triplet = (arr[i], arr[j], complement)
-                    res.add(tuple(sorted(triplet)))  
-                hash_table.add(arr[j])
+                    res.add(tuple(sorted(triplet)))
+            hash_table.add(arr[i]) 
 
         return [list(triplet) for triplet in res] if res else "No"
                 
