@@ -13,7 +13,6 @@ class Solution:
             for j in range(i, n):
                 sum += arr[j]
                 temp.append(arr[j])
-
                 if sum == k:
                     count += 1
                     res.append(temp[:])
