@@ -2,7 +2,7 @@ class Solution:
     def max_subarray(self, arr):
         #Brute Force
         n=len(arr)
-        max_sum=float('-inf')
+        max_sum=0
 
         for i in range(n):
             sum=0
