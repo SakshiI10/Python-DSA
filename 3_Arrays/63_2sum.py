@@ -22,7 +22,8 @@ class Solution():
             for j in range(i+1, n):
                 if (arr[i] + arr[j] == k):
                     double=[arr[i], arr[j]]
-                    res.append(double)
+                    if double not in res:
+                        res.append(double)
         return res
 
 sol=Solution()
