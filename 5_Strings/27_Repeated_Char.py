@@ -5,25 +5,24 @@ Input: S = "geeksforgeeks"
 Output: g'''
 
 # Returns character
-# class Solution:
-#     def firstRep(self, s):
-#         count_dict = {} 
+class Solution:
+    def firstRep(self, s):
+        count_dict = {} 
         
-#         for char in s:
-#             if char in count_dict:
-#                 count_dict[char] += 1
-#             else:
-#                 count_dict[char] = 1
+        for char in s:
+            if char in count_dict:
+                count_dict[char] += 1
+            else:
+                count_dict[char] = 1
         
-#         for char in s:
-#             if count_dict[char] > 1:
-#                 return char
+        for char in s:
+            if count_dict[char] > 1:
+                return char
         
-#         return '#'
+        return '#'
 
 # Returns index
-class Solution:
-    def repeatingCharacter(self,s):
+    def repeatingCharacter2(self,s):
         freq = {} 
         
         for char in s:
@@ -41,5 +40,7 @@ class Solution:
         return -1
 
 sol = Solution()
-print(sol.repeatingCharacter("geeksforgeeks"))  # Output: g
-print(sol.repeatingCharacter("abcde"))          # Output: #
+print(sol.firstRep("geeksforgeeks")) 
+print(sol.repeatingCharacter2("geeksforgeeks"))
+print(sol.firstRep("abcde"))         
+print(sol.repeatingCharacter2("abcde"))       
