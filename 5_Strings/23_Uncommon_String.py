@@ -8,33 +8,20 @@ Output: fioqruz'''
 
 class Solution:
     def UncommonChars(self, A, B):
-        countA = {}
-        countB = {}
-
-        # Count frequency of characters in A
-        for char in A:
-            countA[char] = countA.get(char, 0) + 1
-
-        # Count frequency of characters in B
-        for char in B:
-            countB[char] = countB.get(char, 0) + 1
-
-        result = set()
-
-        # Collect uncommon characters from A
-        for char in countA:
-            if char not in countB:
-                result.add(char)
-
-        # Collect uncommon characters from B
-        for char in countB:
-            if char not in countA:
-                result.add(char)
-
-        # Convert set to sorted list and then to string
-        result = ''.join(sorted(result))
-
-        return result
+        l1 = set(s1)
+        l2 = set(s2)
+        res = ''
+        
+        for char in l1:
+            if char not in l2:
+                res += char
+                
+        for char in l2:
+            if char not in l1:
+                res += char
+                
+        res = ''.join(sorted(res))
+        return res
 
 solution = Solution()
 A = "geeksforgeeks"
