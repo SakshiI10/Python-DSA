@@ -14,3 +14,4 @@ sol=Solution()
 n=4
 s='1010'
 print(sol.binaryAdd(n, s))
+ 
