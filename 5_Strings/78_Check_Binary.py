@@ -5,7 +5,7 @@ Input: s = "101"
 Output: true'''
 
 class Solution:
-    def isBinary(self, s):
+    def isBinary(self, str):
         cnt = 0
         for i in str:
             if i == '0' or i == '1':
