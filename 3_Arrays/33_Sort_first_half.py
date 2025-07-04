@@ -14,7 +14,8 @@ class Solution:
         second_half = sorted(arr[k:])
         second_half.reverse()
         
-        return first_half + second_half
+        print("Original Array:",arr)
+        return "Altered Array",first_half + second_half
 
 sol = Solution()
 arr = [10, 20, 30, 40]
