@@ -21,10 +21,10 @@ class Solution:
             if count==k:
                 res.append(num)
                 
-        if not res:
-            return -1
-        else:
+        if res:
             return min(res)
+        else:
+            return -1
         
 sol=Solution()
 arr=[2, 2, 1, 3, 1]

@@ -1,5 +1,10 @@
+'''
+Given an array arr integers that may contain duplicate elements, the index of an element of this array is given to us k (0-based indexing), the task is to find the final position of this element in the array after the stable sort is applied to the array. 
+
+Input: arr[]= [3, 4, 3, 5, 2, 3, 4, 3, 1, 5], k = 5
+Output: 4'''
+
 class Solution:
-    # Function to get the index of an element in a sorted array
     def getIndexInSortedArray(self, arr, k):
         with_index = [] 
         n = len(arr)
