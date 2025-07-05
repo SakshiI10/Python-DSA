@@ -7,13 +7,10 @@ Input:
 Output: 1'''
 
 class Solution:
-    def isPalindrome(self, n):
-        s = str(n)
-        return s == s[::-1]
-
     def isPalinArray(self, arr, n):
         for num in arr:
-            if not self.isPalindrome(num):
+            s=str(num)
+            if s != s[::-1]:
                 return 'false'
         return 'true'
 

@@ -1,9 +1,10 @@
 def palindrome(i, s):
-    if i >= len(s) // 2:
-        return True
-    if s[i] != s[len(s) - i - 1]:  
-        return False
-    return palindrome(i + 1, s)  
+    n=len(s)
+
+    for i in range(n//2):
+        if s[i] != s[n - i - 1]:  
+            return False
+    return True 
 
 s = "madam"
 print(palindrome(0, s))

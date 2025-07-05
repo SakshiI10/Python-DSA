@@ -1,11 +1,11 @@
 class Solution:
     def longest_cons_subseq(self, arr, n):
         for i in range(n):
-            num = arr[i]
+            last_smaller = arr[i]
             count=1
-            while num+1 in arr:
+            while last_smaller+1 in arr:
                 count += 1
-                num += 1
+                last_smaller += 1
         return count
     
     def longest_cons_subseq2(self, arr):

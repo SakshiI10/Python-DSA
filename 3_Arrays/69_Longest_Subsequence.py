@@ -2,7 +2,7 @@ from typing import List
 
 class Solution():
     #Brute Force
-    def getLongestSubarray(self, a: [int], k: int) -> int:
+    def getLongestSubarray(self, a, k):
         n=len(a)
         length=0
 
