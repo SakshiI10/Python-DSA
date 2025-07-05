@@ -15,10 +15,12 @@ class Solution:
         for num in arr:
             if num in unique_ele:
                 return 'true'
+            
             unique_ele.add(num)
+        print(unique_ele)
         return 'false'
     
 sol=Solution()
-arr=[1, 2, 3, 4]
+arr=[1, 2, 3, 4, 4]
 print(sol.removeDuplicate(arr))
 print(sol.checkDuplicates(arr))  

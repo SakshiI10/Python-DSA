@@ -9,13 +9,14 @@ Output : PERFECT'''
 from typing import List
 
 class Solution:
-    def isPerfect(self, n, arr):
-        return arr == arr[::-1]
+    def isPerfect(self, arr, n):
+        # return arr == arr[::-1]
+        for i in range(n//2):
+            if arr[i] != arr[n-i-1]:
+                return 'NOT PERFECT'
+            return 'PERFECT'
 
-n = 5
-arr = [1, 2, 3, 2, 1]
 sol = Solution()
-if sol.isPerfect(n, arr):
-    print("PERFECT")
-else:
-    print("NOT PERFECT")
+arr = [1, 2, 3, 2, 1]
+n = 5
+print(sol.isPerfect(arr, n))
