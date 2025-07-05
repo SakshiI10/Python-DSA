@@ -5,18 +5,19 @@
 
 class Solution:    
     def Rearrange(self, arr):
+        n=len(arr)
         arr.sort()
         res=[]
-        start, end=0, len(arr)-1
+        i, j=0, len(arr)-1
         
-        while start <= end:
-            if start==end:
-                res.append(arr[start])
+        for k in range(n):
+            if k % 2 == 0:
+                res.append(arr[i])
+                i += 1
             else:
-                res.append(arr[start])
-                res.append(arr[end])
-            start += 1
-            end -= 1
+                res.append(arr[j])
+                j -= 1
+                
         return res
     
 sol=Solution()

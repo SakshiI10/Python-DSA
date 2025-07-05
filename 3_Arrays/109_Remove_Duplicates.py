@@ -6,20 +6,16 @@ Output: [1, 2, 3, 4]'''
 
 class Solution:
     def removeDuplicate(self, arr):
-        seen=set()
-        
-        for num in arr:
-            if num not in seen:
-                seen.add(num) 
-        return list(seen)
+        unique_ele=set(arr)
+        return list(unique_ele)
     
     def checkDuplicates(self, arr):
-        seen = set()
+        unique_ele = set()
 
         for num in arr:
-            if num in seen:
+            if num in unique_ele:
                 return 'true'
-            seen.add(num)
+            unique_ele.add(num)
         return 'false'
     
 sol=Solution()

@@ -8,14 +8,14 @@ Output: 74'''
 class Solution:
     def altProduct(self, arr):
         arr.sort()
-        sum_alt = 0
         n = len(arr)
         print(arr)
+        sum_alt = 0
 
-        for i in range(n // 2):
-            product = arr[i] * arr[n - i - 1]
+        for i in range(n//2):
+            product = arr[i]*arr[n-i-1]
             sum_alt += product
-           
+        
         return sum_alt
 
 sol = Solution()

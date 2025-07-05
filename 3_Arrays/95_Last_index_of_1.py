@@ -13,15 +13,17 @@ class Solution:
         return -1
     
     def lastIndex(self, s):
-        n=len(s)
+        digits=list(str(s))
+        n=len(digits)
         
         for i in range(n-1, -1, -1):
-            if s[i]=='1':
+            if digits[i]=='1':
                 return i
         return -1
     
 sol=Solution()
 arr=[0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
-s='00001'
 print(sol.firstIndex(arr))
+
+s='00001'
 print(sol.lastIndex(s))
