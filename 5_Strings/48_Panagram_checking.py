@@ -16,9 +16,8 @@ class Solution:
                 letters.add(char)
                 
         if len(letters) == 26:
-            return 1
-        else:
-            return 0
+            return True
+        return False
 
 sol=Solution()
 s = "Thequickbrownfoxjumpsoverthelazydog"

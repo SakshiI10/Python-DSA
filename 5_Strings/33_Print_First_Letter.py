@@ -8,11 +8,11 @@ Output: gfg '''
 
 class Solution:
     def firstAlphabet(self, S):
-        result = ""
-        words = S.split()
+        res=""
+        words=S.split()
         for word in words:
-            result += word[0]
-        return result
+            res += word[0]
+        return res
 
 solution = Solution()
 S = "geeks for geeks"

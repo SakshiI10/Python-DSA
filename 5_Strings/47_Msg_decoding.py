@@ -9,12 +9,12 @@ Output: 1'''
 class Solution:
     def decode(self, S):
         target='hello'
-        j=0
+        i=0
         
         for char in S:
-            if char == target[j]:
-                j += 1
-                if j==len(target):
+            if char == target[i]:
+                i += 1
+                if i==len(target):
                     return True
         return False
 

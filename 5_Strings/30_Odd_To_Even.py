@@ -26,6 +26,5 @@ class Solution:
         return s
 
 solution = Solution()
-print(solution.makeEven("4543"))  
-print(solution.makeEven("123"))   
-print(solution.makeEven("345"))   
+print(solution.makeEven("4563"))  
+print(solution.makeEven("243"))  
