@@ -16,11 +16,11 @@ class Solution:
                 freq[char] = 1
                 
         total_pairs=0
-        for count in freq.values():
+        for char, count in freq.items():
             total_pairs += count*count
             
         return total_pairs
     
 sol=Solution()
-S='air'
+S='geek'
 print(sol.equalPairs(S))
