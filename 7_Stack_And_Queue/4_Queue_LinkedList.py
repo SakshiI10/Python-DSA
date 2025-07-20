@@ -20,8 +20,8 @@ class Queue:
             return
 
         # Add the new node at the end of the queue and update rear
+        new_node.next = self.rear
         self.rear.next = new_node
-        self.rear = new_node
         print(f"Enqueued: {data}")
 
     def dequeue(self):
