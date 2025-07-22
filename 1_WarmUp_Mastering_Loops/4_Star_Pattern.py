@@ -6,8 +6,8 @@
 ***** '''
 
 def pattern_using_single_loop(n):
-    for i in range(n-1, -1, -1):
-        print(' '*i + '*'* (n-i))
+    for i in range(n):
+        print(' '*(n-i-1) + '*'*(i+1))  
 
 def pattern_using_nested_loops(n):
     for i in range(n):
