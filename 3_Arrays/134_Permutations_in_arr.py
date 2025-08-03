@@ -1,7 +1,6 @@
 '''
 Given two arrays arr1[], arr2[], and an integer k. The task is to check if after permuting both arrays in such a way, we get the sum of their corresponding element greater than or equal to k i.e. arr1i + arr2i >= k for all i (from 0 to n-1). Return true if possible, else false. 
 
-
 Input: k = 10, arr1[] = [2, 1, 3], arr2[] = [7, 8, 9]. 
 Output: true'''
 
