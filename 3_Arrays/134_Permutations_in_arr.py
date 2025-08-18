@@ -19,4 +19,4 @@ k = 5
 arr1 = [1, 2, 2, 1]
 arr2 = [3, 3, 3, 4]
 print(sol.isPossible(k, arr1, arr2))
- 
+   

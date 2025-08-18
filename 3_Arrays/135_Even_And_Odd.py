@@ -32,3 +32,4 @@ sol=Solution()
 n = 6
 arr = [3, 6, 12, 1, 5, 8]
 print(sol.reArrange(arr, n))
+ 
